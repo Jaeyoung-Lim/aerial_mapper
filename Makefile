@@ -14,3 +14,6 @@ push:
 
 publish: build push
 publish-base: build-base push-base
+
+run:
+	docker run -it --rm ethzasl/aerial_mapper:${version} /bin/bash
