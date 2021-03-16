@@ -30,7 +30,7 @@
 
   <include file="$(find px4)/launch/posix_sitl.launch">
       <arg name="vehicle" value="$(arg mav_name)"/>
-      <arg name="sdf" value="$(find mavlink_sitl_gazebo)/models/$(arg model)/$(arg model).sdf"/>
+      <arg name="sdf" value="$(find aerial_mapper_sitl)/models/$(arg model)/$(arg model).sdf"/>
   </include>
 
 <node pkg="rviz" type="rviz" name="rviz" args="-d $(find aerial_mapper_sitl)/rviz/px4_sitl.rviz"/>
