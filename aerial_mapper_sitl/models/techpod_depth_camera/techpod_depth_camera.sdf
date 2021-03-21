@@ -37,26 +37,26 @@
           </image>
           <clip>
             <near>0.5</near>
-            <far>20</far>
+            <far>100</far>
           </clip>
         </camera>
-        <plugin filename="libgazebo_ros_openni_kinect.so" name="camera_controller">
+        <plugin filename="libgazebo_ros_depth_camera.so" name="camera_controller">
           <cameraName>camera</cameraName>
           <alwaysOn>true</alwaysOn>
           <updateRate>20</updateRate>
           <pointCloudCutoff>0.2</pointCloudCutoff>
-          <pointCloudCutoffMax>18</pointCloudCutoffMax>
+          <pointCloudCutoffMax>100</pointCloudCutoffMax>
           <imageTopicName>rgb/image_raw</imageTopicName>
           <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
           <depthImageTopicName>depth/image_raw</depthImageTopicName>
           <depthImageCameraInfoTopicName>depth/camera_info</depthImageCameraInfoTopicName>
           <pointCloudTopicName>depth/points</pointCloudTopicName>
           <frameName>camera_link</frameName>
-          <distortion_k1>0.0</distortion_k1>
-          <distortion_k2>0.0</distortion_k2>
-          <distortion_k3>0.0</distortion_k3>
-          <distortion_t1>0.0</distortion_t1>
-          <distortion_t2>0.0</distortion_t2>
+          <distortionK1>0.0</distortionK1>
+          <distortionK2>0.0</distortionK2>
+          <distortionK3>0.0</distortionK3>
+          <distortionT1>0.0</distortionT1>
+          <distortionT2>0.0</distortionT2>
         </plugin>
       </sensor>
     </link>
