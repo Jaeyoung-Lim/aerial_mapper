@@ -34,6 +34,7 @@
   <include file="$(find px4)/launch/posix_sitl.launch">
       <arg name="vehicle" value="$(arg mav_name)"/>
       <arg name="sdf" value="$(find aerial_mapper_sitl)/models/$(arg model)/$(arg model).sdf"/>
+      <!-- <arg name="world" default="$(find mavlink_sitl_gazebo)/worlds/mcmillan_airfield.world"/> -->
   </include>
 
   <node pkg="aerial_mapper_sitl" type="aerial_mapper_sitl" name="demo_sitl" output="screen" args="--flagfile=$(arg flagfile)" />
